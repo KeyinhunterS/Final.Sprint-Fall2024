@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #ccc; /* Light gray for text */
+  background: #000; /* Black background */
+}
+
+header {
+  background: linear-gradient(90deg, #6a11cb, #2575fc); /* Match footer gradient */
+  color: #fff; /* White text */
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.project {
+  background: #1a1a1a; /* Darker gray for project background */
+  padding: 1rem;
+  border: 1px solid #333; /* Subtle border */
+  margin: 1rem 0;
+  color: #ccc;
+}
+
+footer {
+  text-align: center;
+  background: linear-gradient(90deg, #6a11cb, #2575fc); /* Footer gradient */
+  color: #fff;
+  padding: 1rem 0;
+}
+
+/* Form Styles */
+form {
+  background: #1a1a1a; /* Dark gray form background */
+  border: 2px solid #007BFF;
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 600px; /* Wider form */
+  margin: 2rem auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Stronger shadow for contrast */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+form div {
+  flex: 1; /* Equal spacing for inputs */
+  min-width: 200px;
+}
+
+label {
+  font-weight: bold;
+  color: #FFD700; /* Gold labels */
+  margin-bottom: 0.5rem;
+}
+
+input, textarea, button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #333; /* Darker input border */
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #000; /* Black input background */
+  color: #fff; /* White text */
+}
+
+/* Textarea Styling */
+textarea {
+  flex: 2; /* Message box takes more space */
+  height: 100px;
+  resize: vertical;
+}
+
+/* Hover and Focus Effects */
+input:hover, textarea:hover {
+  background-color: #1a1a1a;
+}
+
+input:focus, textarea:focus {
+  border-color: #FFD700;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+/* Button Styling */
+button {
+  background: #007BFF;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  background-color: #FF4500;
+  transform: scale(0.98); /* Slight click effect */
+}
+
+/* Contact Info Styling */
+.contact-info {
+  display: flex; /* Horizontal layout */
+  justify-content: space-between; /* Evenly distribute items */
+  align-items: center; /* Center vertically */
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, #6a11cb, #2575fc); /* Match header and footer gradient */
+  color: #fff; /* White text for contrast */
+  border-radius: 5px;
+}
+
+.contact-info a {
+  color: #FFD700; /* Gold links */
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  form {
+    padding: 1.5rem;
+  }
+
+  .contact-info {
+    flex-direction: column; /* Stack contact info on smaller screens */
+    text-align: center;
+  }
+}
